@@ -1,0 +1,35 @@
+body{margin: 0px;}
+
+.top{
+
+ 
+}
+.top .quickmenu{
+
+    margin: 10px 0 30px 0;
+    font-size: 11px;
+    color: #999999;
+    text-align: right;
+
+}
+.top .search{
+margin-bottom: 30px;
+
+}
+.menu{
+
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+
+}
+.contents{
+
+    background: #dddddd;
+}
+
+.centerbox{
+
+    width:965px;
+    background: #ffffff;
+    margin: 0 auto 0 auto;
+}
