@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+     
+    </head>
+
+    <body>
+
+            <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script>
+        var requst = new XMLHttpRequest();
+        requst.onreadystatechange = function(){
+            if(requst.readyState == 4){ //
+                if(requst.status == 200){ //응답이 왔을때 응답 코드의 상태. 200은 정상적으로 응답된것!
+                    console.log(requst.responseText);
+                }
+
+            }
+        };
+
+        requst.open("GET", "jq1.html");
+        requst.send();
+
+        </script>
+
+    </body>
+
+</html>
+
