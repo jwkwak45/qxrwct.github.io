@@ -11,6 +11,7 @@
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
         <script>
+        /*
         var requst = new XMLHttpRequest();
         requst.onreadystatechange = function(){
             if(requst.readyState == 4){ //
@@ -21,8 +22,19 @@
             }
         };
 
-        requst.open("GET", "jq1.html");
+
+        requst.open("GET", "jq1.html?a=3&b=5");
         requst.send();
+        */
+        $.get("jq1.html", {a:5, b:3},function(data,status){
+            console.log(data);
+
+        })
+
+        //http://     www.naver.com /     index.html       ?a=3&b=4       #abcd
+        //scheme          domain            pathname       querystring     hash
+        // GET 방식에서는 querystring 방식으로 보낸다.
+
 
         </script>
 
